@@ -9,9 +9,9 @@ Tutorial from https://www.youtube.com/watch?v=EJVGzyWSCBE
 
 # Concepts that should be clear:
 
-getServerSideProps (for PHP-like pages, generated over and over no matther what)  
-getStaticProps (for revalidation in static and dynamic)  
-getStaticPaths (for dynamic paged /[id].js -like)
+`getServerSideProps` (for PHP-like pages, generated over and over no matther what)  
+`getStaticProps` (for revalidation in static and dynamic)  
+`getStaticPaths` (for dynamic paged /[id].js -like. Specifies the static pages -build time generated-, and the fallback for the dynamic ones -generated on first visit and every x revalidate secs-)
 
 ## development env
 
