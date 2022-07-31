@@ -1,18 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Tutorial from https://www.youtube.com/watch?v=EJVGzyWSCBE
 
-## Getting Started
+## Tutorial for
 
-First, run the development server:
+- local, development and production `env` variables
+- index.js: `/` Example of getServerSideProps. like backedn in PHP
+- `/second`: Example of `getStatisProps` in static page. revalidate.
+- `[page].js`: Example `getStaticProps` in dynamic page.
+
+# Concepts that should be clear:
+
+getServerSideProps (for PHP-like pages, generated over and over no matther what)  
+getStaticProps (for revalidation in static and dynamic)  
+getStaticPaths (for dynamic paged /[id].js -like)
+
+## development env
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Open [http://localhost:3000](http://localhost:3000)
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
