@@ -7,11 +7,16 @@ Tutorial from https://www.youtube.com/watch?v=EJVGzyWSCBE
 - `/second`: Example of `getStatisProps` in static page. revalidate.
 - `[page].js`: Example `getStaticProps` in dynamic page.
 
-# Concepts that should be clear:
+- `/api/enable-preview`: preview mode (useful, for instance, if you create a CMS and want a preview mode of a post draft)
+
+# Concepts that should be clear with this example:
 
 `getServerSideProps` (for PHP-like pages, generated over and over no matther what)  
 `getStaticProps` (for revalidation in static and dynamic)  
 `getStaticPaths` (for dynamic paged /[id].js -like. Specifies the static pages -build time generated-, and the fallback for the dynamic ones -generated on first visit and every x revalidate secs-)
+
+`res.setPreviewData({});` to enable preview (also called 'dev') mode.
+Dynamic imports: not implemented in this code, but mentioned in the course: it is downloading js files only when needed, instead of bundeling its javascript inside the main.js source file. See package `next/dynamic`
 
 ## development env
 
